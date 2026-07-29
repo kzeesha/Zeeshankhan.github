@@ -1,102 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
 <title>Zeeshan Khan | Portfolio</title>
-
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:Arial,Helvetica,sans-serif;
-    background:#121212;
-    color:#fff;
-    line-height:1.6;
-}
-
-header{
-    background:#1f1f1f;
-    padding:60px 20px;
-    text-align:center;
-}
-
-header h1{
-    font-size:42px;
-}
-
-header p{
-    margin-top:10px;
-    color:#bbb;
-    font-size:18px;
-}
-
-.btn{
-    display:inline-block;
-    margin-top:20px;
-    padding:12px 25px;
-    background:#00b894;
-    color:white;
-    text-decoration:none;
-    border-radius:30px;
-}
-
-.container{
-    width:90%;
-    max-width:1000px;
-    margin:auto;
-    padding:40px 0;
-}
-
-.card{
-    background:#1e1e1e;
-    margin-bottom:25px;
-    padding:25px;
-    border-radius:12px;
-}
-
-h2{
-    color:#00d1b2;
-    margin-bottom:15px;
-}
-
-ul{
-    padding-left:20px;
-}
-
-.skill{
-    margin:15px 0;
-}
-
-.bar{
-    background:#333;
-    border-radius:20px;
-    overflow:hidden;
-}
-
-.fill{
-    height:12px;
-    background:#00b894;
-}
-
-footer{
-    text-align:center;
-    background:#1f1f1f;
-    color:#aaa;
-    padding:20px;
-}
-</style>
-
-</head>
-
-<body>
-
-<header>
-
-<h1>Zeeshan Khan</h1>
-
-<p>Analyst | Content
+body{margin:0;font-family:Arial;background:#0f172a;color:#eee}
+nav{padding:15px;background:#111827;position:sticky;top:0}
+nav a{color:#7dd3fc;margin:0 12px;text-decoration:none}
+.hero{padding:70px 20px;text-align:center;background:linear-gradient(135deg,#1e293b,#0f172a)}
+.btn{display:inline-block;padding:12px 22px;background:#06b6d4;color:#fff;border-radius:25px;text-decoration:none}
+section{max-width:900px;margin:auto;padding:40px 20px}
+.card{background:#1f2937;padding:20px;border-radius:12px;margin:18px 0}
+.bar{background:#374151;border-radius:8px}.fill{height:10px;background:#22c55e;border-radius:8px}
+footer{text-align:center;padding:20px;background:#111827}
+</style></head><body>
+<nav><a href='#about'>About</a><a href='#exp'>Experience</a><a href='#skills'>Skills</a><a href='#contact'>Contact</a></nav>
+<div class='hero'><h1>Zeeshan Khan</h1><h3 id='t'></h3><p>Navi Mumbai, India</p><a class='btn' href='#contact'>Contact Me</a></div>
+<section id='about'><div class='card'><h2>About</h2><p>Experienced Analyst with 14+ years in Content Moderation, Banking Operations and Customer Support. Currently working at Accenture Solutions Pvt. Ltd.</p></div></section>
+<section id='exp'><div class='card'><h2>Experience</h2><h3>Accenture Solutions Pvt. Ltd.</h3><p><b>Analyst (2017–Present)</b></p><ul><li>Content Moderation</li><li>Policy Enforcement</li><li>Quality Assurance</li><li>Operations</li></ul></div></section>
+<section id='skills'><div class='card'><h2>Skills</h2>Content Moderation<div class='bar'><div class='fill' style='width:95%'></div></div><br>Customer Support<div class='bar'><div class='fill' style='width:90%'></div></div><br>MS Office<div class='bar'><div class='fill' style='width:90%'></div></div></div></section>
+<section id='contact'><div class='card'><h2>Contact</h2><p>📧 kzeeshan512@gmail.com<br>📞 9022980339<br>📍 Navi Mumbai</p></div></section>
+<footer>© 2026 Zeeshan Khan</footer>
+<script>
+const words=["Analyst","Content Moderator","Banking Operations"];let i=0,j=0,d=true;
+setInterval(()=>{let w=words[i];document.getElementById('t').textContent=w.slice(0,j);if(d){j++;if(j>w.length){d=false;setTimeout(()=>{},500)}}else{j--;if(j==0){d=true;i=(i+1)%words.length}}},120);
+</script></body></html>
